@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class PrimeNo 
+   {
+	public static void main(String[] args) 
+	  {
+		Scanner input = new Scanner(System.in);
+		int a, i, flag=0;
+		System.out.println("Enter a number");
+		a = input.nextInt();
+		for (i = 2; i < a / 2; i++)
+			if (a % i == 0)
+				flag = 1;
+			
+		if (a == 1)
+			System.out.println("The number is neither prime nor composite");
+		else 
+ 		  {
+			if (flag == 0)
+				System.out.println("The number is prime");
+			else
+				System.out.println("The number is composite");
+
+		   }
+	
+        }
+    }
+
+
+$javac PrimeNo.java
+$java  PrimeNo
+output 1
+Enter a number
+18
+The number is composite
+
+
+$javac PrimeNo.java
+$java  PrimeNo
+output 2
+Enter a number
+13
+The number is prime

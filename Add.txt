@@ -1,0 +1,38 @@
+import java .util.Scanner;
+
+public class Add
+ {
+  public static void main(String[] args) 
+     {
+
+	int a,b,s;
+		
+	Scanner sc=new Scanner(System.in);
+		
+	System.out.println("Enter a number");
+		
+	a=sc.nextInt();
+		
+	System.out.println("Enter another number");
+		
+	b=sc.nextInt();
+		
+	s=a+b;
+		
+
+	System.out.println("sum="+s);
+		
+	
+     }
+ 
+}
+
+
+$javac Add.java
+$java  Add
+output
+Enter a number
+3
+Enter another number
+4
+sum=7
